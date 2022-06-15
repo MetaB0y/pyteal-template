@@ -237,7 +237,7 @@ describe('App Creation', () => {
   })
 
   it('Passes approval program', () => {
-    console.log(appDrTxn['app-call-messages'][1])
+    expect(appDrTxn['app-call-messages'][1]).toBe('PASS')
   })
 
   afterAll(async () => {
