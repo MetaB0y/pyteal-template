@@ -18,12 +18,12 @@ if __name__ == "__main__":
     if os.path.exists("clear.teal"):
         os.remove("clear.teal")
 
-    compiled_approval = compileTeal(approval(), mode=Mode.Application, version=5)
+    compiled_approval = compileTeal(approval(), mode=Mode.Application, version=6)
 
     with open("approval.teal", "w") as f:
         f.write(compiled_approval)
 
-    compiled_clear = compileTeal(clear(), mode=Mode.Application, version=5)
+    compiled_clear = compileTeal(clear(), mode=Mode.Application, version=6)
 
     with open("clear.teal", "w") as f:
         f.write(compiled_clear)
