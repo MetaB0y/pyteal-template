@@ -6,7 +6,7 @@ TEAL=approval.teal
 CLEAN_TESTS="rm -f tests/*.teal tests/index.js* tests/dryruns/*"
 
 init:
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 	cd tests && mkdir -p dryruns && npm i
 
 clean:
